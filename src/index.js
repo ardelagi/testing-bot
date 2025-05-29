@@ -39,13 +39,9 @@ try {
 client.logs = require("./utils/logs");
 client.config = require("./config");
 
-// Val Api //
 
-client.swatch = null;
-client.skins = null;
-client.skinsTier = null;
 
-require('./preview');
+
 
 // Packages //
 

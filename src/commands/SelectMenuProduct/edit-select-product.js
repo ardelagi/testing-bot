@@ -11,6 +11,9 @@ module.exports = {
         .setName("edit-product")
         .setDescription("Edit a product from a select menu.")
         .setDefaultMemberPermissions(PermissionFlagsBits.ManageGuild),
+
+    enabled: false,
+    
     async execute(interaction) {
         const data = await SelectMenu.findOne({ GuildID: interaction.guildId });
         if (!data || !data.channels.length)

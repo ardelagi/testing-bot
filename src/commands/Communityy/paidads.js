@@ -19,6 +19,8 @@ module.exports = {
                 .setDescription('Durasi PaidAds (misal: 1d, 2h).')
                 .setRequired(true)),
 
+    enabled: false,
+
     async execute(interaction) {
         // Cek permission Admin
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {

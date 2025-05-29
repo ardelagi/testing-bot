@@ -13,6 +13,8 @@ module.exports = {
                 .addChannelTypes(ChannelType.GuildText)
         ),
 
+    enabled: false,
+
     async execute(interaction) {
         // Cek apakah pengguna memiliki izin administrator
         if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) {

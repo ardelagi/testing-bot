@@ -16,6 +16,8 @@ module.exports = {
                 .setDescription('Jumlah Vouch yang ingin diset')
                 .setRequired(true)
         ),
+
+    enabled: false,
     
     async execute(interaction) {
         const guildName = interaction.options.getString('guild');

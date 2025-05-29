@@ -36,6 +36,8 @@ module.exports = {
                 .setDescription("An image URL for the response (optional).")
                 .setRequired(false)
         ),
+
+    enabled: false,
         
     async execute(interaction) {
         const { options, guildId } = interaction;

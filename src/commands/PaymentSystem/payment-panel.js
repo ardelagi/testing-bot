@@ -28,6 +28,8 @@ module.exports = {
         .setDescription('Deskripsi embed.')
         .setRequired(true)),
 
+  enabled: false,
+
   async execute(interaction) {
     const { guild, options } = interaction;
     const channel = options.getChannel('channel');

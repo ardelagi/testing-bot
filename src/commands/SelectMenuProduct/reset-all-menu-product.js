@@ -17,6 +17,8 @@ module.exports = {
                 .setRequired(true)
         ),
 
+    enabled: false,
+
     async execute(interaction) {
         const { options, guildId } = interaction;
         const targetChannel = options.getChannel("channel");

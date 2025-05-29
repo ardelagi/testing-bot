@@ -10,6 +10,8 @@ module.exports = {
                 .setDescription('Nama metode yang ingin dihapus')
                 .setRequired(true)),
 
+    enabled: false,
+
     async execute(interaction) {
         const method = interaction.options.getString('method');
         const setup = await PaymentSetup.findOne({ GuildID: interaction.guild.id });

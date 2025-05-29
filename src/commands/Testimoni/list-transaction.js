@@ -8,6 +8,8 @@ module.exports = {
     .setDescription('Tampilkan daftar buyer dan jumlah transaksinya.')
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
+  enabled: false,
+  
   async execute(interaction) {
     const { guild, client } = interaction;
 

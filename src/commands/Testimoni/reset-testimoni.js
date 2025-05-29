@@ -19,6 +19,8 @@ module.exports = {
                     { name: 'Delete Buyer Data', value: 'delete' }
                 )),
 
+    enabled: false,
+
     async execute(interaction) {
         const { options, guild } = interaction;
 
