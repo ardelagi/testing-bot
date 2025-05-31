@@ -20,7 +20,7 @@ module.exports = {
 
         // Temukan sticky message terakhir yang dikirim bot
         const lastSticky = messages.find(msg => 
-            msg.author.id === client.user.id && msg.content.startsWith("__**Sticky Message**__:")
+            msg.author.id === client.user.id && msg.content.startsWith("")
         );
 
         // Jika ada sticky message sebelumnya, hapus terlebih dahulu
