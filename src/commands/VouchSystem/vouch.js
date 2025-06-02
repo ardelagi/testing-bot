@@ -42,7 +42,7 @@ module.exports = {
       option.setName("comments").setDescription("Comments on the transaction").setRequired(true)
     ),
 
-  enabled: false,
+
 
   async execute(interaction) {
     await interaction.deferReply({ ephemeral: true });

@@ -16,9 +16,6 @@ module.exports = {
                 .setDescription('Select the role for sellers.')
                 .setRequired(true)),
 
-    
-    enabled: false,
-
 
     async execute(interaction) {
         const { options, guild } = interaction;
