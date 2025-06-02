@@ -14,7 +14,6 @@ module.exports = {
                 .addChannelTypes(ChannelType.GuildText)
                 .setRequired(true)),
 
-    enabled: false,
 
     async execute(interaction) {
         // Check if the user has Administrator permission
