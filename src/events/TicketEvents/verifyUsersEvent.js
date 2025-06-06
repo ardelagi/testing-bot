@@ -103,7 +103,7 @@ module.exports = {
 };
 
 function generateCaptcha(length) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
     return Array.from({ length }, () => chars.charAt(Math.floor(Math.random() * chars.length))).join('');
 }
 

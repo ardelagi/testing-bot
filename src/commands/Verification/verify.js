@@ -77,9 +77,7 @@ module.exports = {
                     .setColor(client.config.embedVerify)
                     .setThumbnail(interaction.guild.iconURL())
                     .setTimestamp()
-                    .setTitle(`${client.user.username} Verification System ${client.config.arrowEmoji}`)
                     .setAuthor({ name: `Verification System ${client.config.devBy}` })
-                    .setFooter({ text: `${interaction.guild.name} Verification System` })
                     .setDescription(`> ${message}`);
 
                 await interaction.reply({ content: `Your **verification system** has been enabled!`, ephemeral: true });
